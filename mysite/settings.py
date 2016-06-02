@@ -25,7 +25,8 @@ SECRET_KEY = '%1ohsv%szmr1k*7pp6am64bftixr@hsascz$547t&3u_51a6=)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://andrewsgetpurple.pythonanywhere.com/',
+'127.0.0.1','localhost','http://fonts.googleapis.com','https://www.bootstrapcdn.com/']
 
 
 # Application definition
