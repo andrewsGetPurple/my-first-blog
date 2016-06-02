@@ -1,6 +1,11 @@
+{% load staticfiles %}
 <html>
   <head>
     <title>Andrew's Journey Into The World Of Machines</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
     <h1>To The Moon!</h1>
@@ -9,7 +14,7 @@
     <p>From humble beginnnings...</p>
 
     <br></br>
-    <br></br>
+
 
     <h2>Never Forget</h2>
     <p>I must hold in my mind an appreciation of the present day.</p>
@@ -17,7 +22,7 @@
 
 
     <br></br>
-    <br></br>
+
 
     <h2>Important Areas of Focus</h2>
     <ul>
@@ -25,12 +30,16 @@
       <li>Django</li>
       <li>Celery</li>
     </ul>
+    <br></br>
+
 
     {% for post in posts %}
       <div>
-        <p>published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
+        <p>published: {{ post.published_date }}</p>
         <p>{{ post.text|linebreaks }}</p>
+        <br></br>
+
 
       </div>
     {% endfor %}
