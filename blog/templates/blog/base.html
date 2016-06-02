@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Andrew's Journey Into The World Of Machines</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="page-header">
+      <h1><a href="/">To The Moon!</a></h1>
+    </div>
+    <p>This journal will be a record of my growth as a programmer.</p>
+    <p>Retracing my steps will become increasingly important over time.</p>
+    <p>From humble beginnnings...</p>
+
+    <br></br>
+
+
+    <h2>Never Forget</h2>
+    <p>I must hold in my mind an appreciation of the present day.</p>
+    <p>But it's also important (maybe of utmost importance) to realize how far I have to go.</p>
+
+
+    <br></br>
+
+
+    <h2>Important Areas of Focus</h2>
+    <ul>
+      <li>Python3</li>
+      <li>Django</li>
+      <li>Celery</li>
+    </ul>
+    <br></br>
+
+
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
