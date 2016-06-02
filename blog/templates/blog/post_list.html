@@ -25,5 +25,15 @@
       <li>Django</li>
       <li>Celery</li>
     </ul>
+
+    {% for post in posts %}
+      <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaks }}</p>
+
+      </div>
+    {% endfor %}
+
   </body>
 </html>
